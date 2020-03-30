@@ -35,6 +35,7 @@ public class ReentrantLockTest {
 
     public void test() {
         lock.lock();
+        lock.newCondition();
         try {
             System.out.println(Thread.currentThread().getName());
         } catch (Exception e) {
