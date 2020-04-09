@@ -18,13 +18,9 @@ public class ListNode {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        ListNode h = this;
-        while (h != null) {
-            builder.append("-->").append(h.val);
-            h = h.next;
-        }
-        return builder.toString().substring("-->".length());
+        return "ListNode{" +
+                "val=" + val +
+                '}';
     }
 
 }

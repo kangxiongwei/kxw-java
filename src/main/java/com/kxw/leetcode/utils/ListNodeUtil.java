@@ -61,4 +61,16 @@ public class ListNodeUtil {
         return sort;
     }
 
+    public static String printListNode(ListNode head) {
+        StringBuilder builder = new StringBuilder();
+        ListNode h = head;
+        while (h != null) {
+            builder.append("-->").append(h.val);
+            h = h.next;
+        }
+        return builder.toString().substring("-->".length());
+    }
+
+
+
 }
