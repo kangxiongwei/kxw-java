@@ -2,7 +2,6 @@ package com.kxw.leetcode;
 
 import com.kxw.leetcode.factory.ListNodeFactory;
 import com.kxw.leetcode.model.ListNode;
-import com.sun.corba.se.impl.interceptors.SlotTable;
 
 /**
  * 给定链表重排序
