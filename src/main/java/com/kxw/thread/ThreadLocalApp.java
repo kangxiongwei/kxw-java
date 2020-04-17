@@ -1,4 +1,4 @@
-package com.kxw.juc;
+package com.kxw.thread;
 
 /**
  * @author kangxiongwei
