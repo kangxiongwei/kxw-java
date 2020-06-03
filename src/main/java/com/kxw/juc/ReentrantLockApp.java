@@ -20,11 +20,7 @@ public class ReentrantLockApp {
 
 
     public static void main(String[] args) throws Exception {
-        for (int i = 0; i < 5; i++) {
-            Thread thread = new Thread(new InterruptStateThread());
-            thread.start();
-            thread.interrupt();
-        }
+        startProduceThread();
     }
 
     private static void startStateThread() throws Exception {
@@ -39,6 +35,14 @@ public class ReentrantLockApp {
         for (int i = 0; i < 5; i++) {
             new Thread(new ProduceStateThread()).start();
             new Thread(new ConsumerStateThread()).start();
+        }
+    }
+
+    private static void startInterruptStateThread() {
+        for (int i = 0; i < 5; i++) {
+            Thread thread = new Thread(new InterruptStateThread());
+            thread.start();
+            thread.interrupt();
         }
     }
 
