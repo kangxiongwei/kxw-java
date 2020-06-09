@@ -1,9 +1,7 @@
 package com.kxw.leetcode;
 
-import java.util.Collection;
-import java.util.Collections;
-
 /**
+ * 4.寻找有序数组中位数
  * 有两个大小分别为m和n的有序数组A和B。请找出这两个数组的中位数。你需要给出时间复杂度在O(log (m+n))以内的算法。
  *
  * @author kangxiongwei
