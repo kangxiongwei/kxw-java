@@ -21,7 +21,7 @@ public class TaskService implements InitializingBean {
         LOGGER.info("初始化bean开始...");
         for (int i = 0; i < 10; i++) {
             LOGGER.info("正在加载数据{}...", i);
-            Thread.sleep(1000);
+            //Thread.sleep(1000);
         }
         LOGGER.info("初始化bean结束...");
     }

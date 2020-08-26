@@ -27,6 +27,13 @@ public class SpringBootApp {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootApp.class, args);
         LOGGER.info("服务已启动...");
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> {
+                while(true) {
+                    System.out.println(Thread.currentThread().getName() + "--->" + System.currentTimeMillis());
+                }
+            }, "KxwThread-" + i).start();
+        }
     }
 
     @GetMapping("/hello")
